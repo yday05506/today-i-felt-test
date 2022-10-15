@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+
+  /* 기본 폰트 스타일 정의 */
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Hi Melody';
+
+  /* 기본 배경 색 */
+  background-color: #EEEDE6;
+}
