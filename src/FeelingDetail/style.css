@@ -1,0 +1,51 @@
+.feeling-detail {
+  background: white;
+  flex: 3;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 50%);
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 360px;
+  height: 360px;
+  border: solid 8px #000;
+  position: relative;
+  font-family: sans-serif;
+  /* border-style: solid;
+  border-width: 8px;
+  border-color: #000; */
+  /* 가운데에 놓는 방법 */
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.title>h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 20px;
+
+}
+
+.owner-name {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  border-bottom: solid 2px #000;
+}
+
+.owner-name>input {
+  width: 10ch;
+  border: none;
+  margin-left: 1ch;
+  font-size: inherit;
+}
+
+.owner-name>input:focus {
+  outline: none;
+}

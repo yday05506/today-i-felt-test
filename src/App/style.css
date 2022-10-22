@@ -11,3 +11,9 @@ body {
   /* 기본 배경 색 */
   background-color: #EEEDE6;
 }
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
