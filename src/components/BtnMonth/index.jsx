@@ -11,7 +11,9 @@ class BtnMonth extends React.Component {
       <button
         type="button"
         className={className}
-        onClick={() => { this.props.onClick(this.props.month); }}
+        onClick={() => {
+          this.props.onClick(this.props.month);
+        }}
       >
         {this.props.month}
       </button>

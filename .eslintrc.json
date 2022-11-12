@@ -20,6 +20,8 @@
     "rules": {
         "react/prefer-stateless-function": "off", 
         "react/prop-types": "off",
-        "react/destructuring-assignment": "off"
+        "react/destructuring-assignment": "off",
+        "class-methods-use-this": "off",
+        "react/no-unused-class-component-methods": "off"
     }
 }
