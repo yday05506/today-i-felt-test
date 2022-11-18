@@ -13,6 +13,7 @@ class FeelingList extends React.Component {
   }
 
   onClickBtnMonth(month) {
+    console.log(this);
     this.setState({ selectedMonth: month });
   }
 
