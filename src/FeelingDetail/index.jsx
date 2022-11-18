@@ -1,4 +1,6 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AddFeeling from '../AddFeeling';
 import './style.css';
 
 class FeelingDetail extends React.Component {
@@ -6,30 +8,39 @@ class FeelingDetail extends React.Component {
     window.localStorage.setItem('owner-name', name);
   }
 
+  renderCover() {
+    return (
+      <div className="title">
+        <h1>
+          Today
+          <br />
+          I
+          <br />
+          Felt
+        </h1>
+        <div className="owner-name">
+          <strong>Name:</strong>
+          <input
+            type="text"
+            maxLength={5}
+            onBlur={(event) => {
+              console.log(event.target.value);
+              this.saveName(event.target.value);
+            }}
+            defaultValue={window.localStorage.getItem('owner-name')}
+          />
+        </div>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="feeling-detail">
-        <div className="title">
-          <h1>
-            Today
-            <br />
-            I
-            <br />
-            Felt
-          </h1>
-          <div className="owner-name">
-            <strong>Name:</strong>
-            <input
-              type="text"
-              maxLength={5}
-              onBlur={(event) => {
-                console.log(event.target.value);
-                this.saveName(event.target.value);
-              }}
-              defaultValue={window.localStorage.getItem('owner-name')}
-            />
-          </div>
-        </div>
+        <Routes>
+          <Route path="/" element={this.renderCover()} />
+          <Route path="/add-feeling" element={<AddFeeling />} />
+        </Routes>
       </div>
     );
   }
