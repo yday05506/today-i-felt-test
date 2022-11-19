@@ -3,14 +3,17 @@
   grid-template-columns: 80px 1fr 80px 1fr;
   grid-template-rows: 30px 42px 30px auto;
   column-gap: 12px;
-  row-gap: 12px;
+  row-gap: 32px;
   line-height: 30px;
 }
 
-.add-feeling input[type=text] {
+.add-feeling input[type=text],
+.add-feeling select {
   font-family: 'Hi Melody';
   height: 24px;
   font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .feeling-radio-group {
@@ -30,4 +33,26 @@
   font-family: 'Hi Melody';
   font-size: 20px;
   line-height: 24px;
+  padding: 4px 6px;
+}
+
+.link-back {
+  margin-bottom: 24px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.btn-submit {
+  font-size: 20px;
+  height: 42px;
+  margin-top: 32px;
+  font-family: 'Hi Melody';
+  background-color: #000;
+  color: #fff;
+  border-radius: 21px;
+  width: 120px;
+}
+
+.add-feeling-footer {
+  text-align: right;
 }

@@ -43,9 +43,18 @@
   width: 10ch;
   border: none;
   margin-left: 1ch;
-  font-size: inherit;
+  font-size: 24px;
+  font-family: 'Hi Melody';
 }
 
 .owner-name>input:focus {
   outline: none;
+}
+
+.link-add-feeling {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  font-family: 'Hi Melody';
+  padding-top: 16px;
 }

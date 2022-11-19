@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import AddFeeling from '../AddFeeling';
 import './style.css';
 
@@ -30,6 +30,9 @@ class FeelingDetail extends React.Component {
             defaultValue={window.localStorage.getItem('owner-name')}
           />
         </div>
+        <Link to="/add-feeling" className="link-add-feeling">
+          오늘의 기분 추가하기 ▶️
+        </Link>
       </div>
     );
   }

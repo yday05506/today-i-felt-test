@@ -17,3 +17,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.App a {
+  text-decoration: none;
+}
+
+.App a:visited {
+  color: inherit;
+}
