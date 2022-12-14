@@ -8,7 +8,7 @@ class BtnMonth extends React.Component {
   }
 
   onClick() {
-    // console.log(this);
+    console.log(this);
     // console.log(this === window);
     this.props.onClick(this.props.month);
   }
